@@ -4,7 +4,7 @@
 
 
 <select id="list" resultType="com.example.teamLog.dto.TeamLogDto">
-    SELECT * FROM teamlogin
+    SELECT * FROM member
 </select>
 
 <select id="select">
@@ -12,7 +12,7 @@
 </select>
 
 <insert id="reg">
-    INSERT INTO member (id, pw) VALUES (#{id}, #{pw})
+    INSERT INTO member (id, pw,role) VALUES (#{id}, #{pw},#{role})
 </insert>
 
 <delete id="delete">
